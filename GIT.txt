@@ -1,0 +1,110 @@
+GIT -- version
+
+GiT Config --global user.name "" 
+GiT Config --global user.email "" 
+GiT Config --list
+Git config --help
+$ ls -la
+if we dont want to track with git
+$ rm -rf .git 
+$ touch .gitignore
+$ git clone https://github.com/libgit2/libgit2
+
+$ git add -A (staging area)
+$ git status 
+if you want to remove file from the staging area
+
+$ git reset 
+$ git reset calc.py
+
+Directory
+$ cd /c/OnlyGod
+
+
+Committing
+cLONING 
+
+$ git clone <url>
+
+$ git clone ../remote_repo. 
+$ git remote -v
+$ git branch -a
+$ git diff shows changes...
+$ git pull origin master
+
+$ git push origin master
+
+Work Flow 
+we first note the change we want to make then create branch with it 
+$ git branch calc-divide
+
+
+$ git checkout calc-divide
+ 
+
+Sango Tolgate...
+Amadia Bus Stop
+
+$ git add -A
+
+$ git commit -a -m"a new way to commit"
+
+$ git staus
+
+$ git commit -m "initial changes to index file" 
+
+
+
+WHERE ARE WE NOW?
+WORKING DIRECTORY
+STAGING AREA
+.git directory(Repository)
+
+Checkout the Project
+Stage Fixes
+Comit
+
+
+'
+Error:fatal: Unable to create 'C:/GITHUB/Grace/.git/index.lock': File exists.
+
+Solution:$ rm -f ./.git/index.lock
+
+Error: Unable to create branch not a valid objec of master 
+Solution:$ git commit -m "valid object"
+
+Emergency commit from master branch
+git checkout -b emergency-fix
+Switched to a new branch 'emergency-fix'
+
+
+how to make the repository address the origin of our local repository...
+
+$ git remote add origin https://github.com/wolex2care/testhub.git 
+
+
+git push --set-upstream origin master
+
+Fetching from origin
+ 
+$ git fetch origin
+ to check 
+$git status
+$git log origin/master 
+
+That looks as expected, but we can also verify by showing the differences between our local master and origin/master:
+
+Git Pull
+But what if you just want to update your local repository, without going through all those steps?
+
+pull is a combination of fetch and merge. It is used to pull all changes from a remote repository into the branch you are working on.
+git diff origin/master
+
+git branch -a (for all branches available)
+
+WOLEX@WOLEX-PC MINGW64 /c/Apps/testhub (anyChange)
+$ git push origin
+fatal: The current branch anyChange has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin anyChange
